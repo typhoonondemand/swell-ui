@@ -1,6 +1,5 @@
 {
   "name": "typhoon-swell",
-  "private": false,
   "version": "0.0.3",
   "repository": "https://github.com/typhoonondemand/typhoon-swell.git",
   "type": "module",
