@@ -1,0 +1,146 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+import { themes, ThemeProvider, convert, ensure } from "@storybook/theming";
+
+<Meta
+  title="Foundation/Color"
+  parameters={{
+    viewMode: "docs",
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  }}
+/>
+
+<style>
+  {`
+    .sbdocs p {
+      font-size: 1.25em;
+      line-height: 1.35;
+    }
+
+    .sbdocs h3 {
+        margin-block-end: 0;
+    }
+
+    .sbdocs h3 + p {
+        margin-block: 0;
+    }
+`}
+</style>
+
+# Color
+
+## Principles
+
+### Color is meaningful
+
+Color alone is not always enough to convey meaning, but it can help support the intended message. Use colors meaningfully to help users identify status, see actions, or indicate next steps.
+
+### Color supports hierarchy
+
+Color can be used to enhance and separate levels of important information. Use colors to draw a user's focus and attention to particular content areas.
+
+### Color is accessible
+
+Colors that meet standard contrast ratios provide accessible interfaces for a wide range of our users. Use accessible color combinations to increase usability and readability.
+
+<br/>
+<br/>
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="Brand Colors"
+    colors={{
+      100: "#123c35",
+      200: "#185046",
+      300: "#24796a",
+      400: "#30a18d",
+      500: "#3dcab1",
+      600: "#63d4c0",
+      700: "#8adfd0",
+      800: "#b1e9df",
+      900: "#ebf9f7",
+    }}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="Brand Supporting Colors"
+    colors={{
+      100: "#0e273c",
+      200: "#184265",
+      300: "#1c4f79",
+      400: "#266aa2",
+      500: "#3085cb",
+      600: "#599dd5",
+      700: "#82b5df",
+      800: "#acceea",
+      900: "#d5e6f4",
+    }}
+  />
+  <ColorItem
+    title="Neutral"
+    colors={{
+      100: "#2d3533",
+      200: "#4b5855",
+      300: "#697b76",
+      400: "#879f99",
+      500: "#97b1aa",
+      600: "#abc0bb",
+      700: "#c0d0cc",
+      800: "#d5dfdd",
+      900: "#eaefee",
+    }}
+  />
+<ColorItem
+    title="Gray"
+    subtitle=""
+    colors={{
+      100: "#232323",
+      200: "#303030",
+      300: "#474747",
+      400: "#707070",
+      500: "#989898",
+      600: "#a9a9a9",
+      700: "#c0c0c0",
+      800: "#dadada",
+      900: "#fafafa",
+    }}
+  />
+<ColorItem
+  title="Confirm"
+  subtitle="Confirm/Success"
+  colors={{
+    dark: "#466b3f",
+    base: "#75B36A",
+    light: "#bad9b4",
+  }}
+/>
+<ColorItem
+  title="Error"
+  subtitle="Cancel/Error"
+  colors={{
+    dark: "#7c1f18",
+    base: "#D13429",
+    light: "#f1c2be",
+  }}
+/>
+<ColorItem
+  title="Alert"
+  subtitle="Alert/Warn"
+  colors={{
+    dark: "#e2800f",
+    base: "#FDA452",
+    light: "#fed1a8",
+  }}
+/>
+<ColorItem
+  title="Info"
+  subtitle="Inform/Info"
+  colors={{
+    dark: "#113299",
+    inform: "#1D54FF",
+    light: "#A4BAFF",
+  }}
+/>
+</ColorPalette>

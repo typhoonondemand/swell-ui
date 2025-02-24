@@ -1,0 +1,46 @@
+import { Meta, Primary, Controls, Story } from '@storybook/blocks';
+import { BADGE } from '@geometricpanda/storybook-addon-badges';
+import * as ButtonStories from './Button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button
+Use buttons for actions that affect the website's front-end or back-end.
+Use the appropriate variant for your intent.
+
+<Primary />
+
+## Props
+<Controls />
+
+## Button Text
+Label button actions clearly and accurately. Begin with actionable verbs.
+<br/>
+
+## Button Icons
+A button may have one or two icons associated with the text.
+
+If one icon is declared, its position can be declared using `iconPlacement` with options of 'start' and 'end'. 
+
+If there are two icons, they must be comma-delimited in order to take affect.
+
+Their placement before or after the button text is determined by the order in which they are declared.
+
+For instance, `iconNames="home,star"` would show the home icon before the button text, and the star icon after the button text.
+
+To change the placement of those icons, simply change the order of declaration: `iconNames="home,star"`.
+<br/>
+
+## Variants
+`Primary` - Use a primary button to highlight the most important call to action in an experience.
+Use them sparingly, at most once in a container, to avoid making the interface too busy.
+<br/>
+
+`Secondary` - Use secondary buttons alongside a primary button to provide alternative actions on a page. If no variant is provided, the Button will default to this look and feel.
+<br/>
+
+`Critical` - Destructive. Use for actions that delete, disconnect, or perform an action the user cannot undo.
+<br/>
+
+
+<br/>

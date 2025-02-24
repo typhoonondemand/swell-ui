@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/web-components";
+import "../src/css/base.css";
 
 const preview: Preview = {
   parameters: {
@@ -6,6 +7,14 @@ const preview: Preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+      },
+    },
+    options: {
+      storySort: {
+        order: [
+          "Welcome",
+          "Foundation",
+        ]
       },
     },
   },

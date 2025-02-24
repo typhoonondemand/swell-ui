@@ -1,0 +1,148 @@
+import { Meta } from '@storybook/blocks';
+
+import CodeBrackets from './stories/assets/code-brackets.svg';
+import Colors from './stories/assets/colors.svg';
+import Comments from './stories/assets/comments.svg';
+import Direction from './stories/assets/direction.svg';
+import Flow from './stories/assets/flow.svg';
+import Plugin from './stories/assets/plugin.svg';
+import Repo from './stories/assets/repo.svg';
+import StackAlt from './stories/assets/stackalt.svg';
+
+<Meta title="Welcome/Introduction" />
+
+<style>
+  {`
+    .sbdocs p {
+      font-size: 1.25em;
+      line-height: 1.35;
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 0.625em;
+      padding-inline-start: 0;
+    }
+
+    @media (min-width: 620px) {
+      .link-list {
+        row-gap: 1.25em;
+        column-gap: 1.25em;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media all and (-ms-high-contrast:none) {
+    .link-list {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr;
+      }
+    }
+
+    .link-list li {
+      display: grid;
+      grid-template-columns: 20% 1fr;
+      grid-gap: 1rem;
+      padding: 1.25em 1.875em 1.25em 1em;
+      border: 1px solid #00000070;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      align-items: flex-start;
+      pointer-events: none;
+    }
+
+    .link-list li img {
+      align-self: center;
+      width: 100%;
+    }
+
+    .link-list li strong {
+      font-weight: 700;
+      font-size: 1.25em;
+      display: block;
+      margin-block-end: 0.25em;
+    }
+
+    .link-list li span {
+      font-size: 0.875em;
+      line-height: 1.25;
+    }
+
+  `}
+</style>
+
+# Welcome to Swell UI
+
+Swell is Typhoon’s living, breathing design system and UI library. Its purpose is to form an underlying language that unites our visual style, components, and interaction patterns across design and code. 
+
+Our goal is to provide a collection of reusable components, guided by clear standards, that can be assembled together to build any number of digital products. It is maintained by the UX/UI team and will regularly evolve to meet Typhoon’s changing needs.
+
+We hope to improve our UX/UI consistency and quality over time, helping make our software design and development processes more efficient.
+
+Through this process we aim to establish a common vocabulary between members of our organization and enable beneficial collaboration between teams.
+<br/>
+
+## Design Principles
+
+<ul className="link-list">
+  <li>
+    <img src={Direction} alt="Colors" />
+    <strong>Place user needs first</strong>
+    We care for the people who use our products. We are here to make their day-to-day and long-term work better and more pleasant through great user experience.
+  </li>
+  <li>
+      <img src={Colors} alt="Comments" />
+      <strong>Consistency, not uniformity</strong>
+      We should use the same language and design patterns wherever possible. This helps people get familiar with our services.
+  </li>
+  <li>
+      <img src={Comments} alt="Comments" />
+      <strong>Default to openness</strong>
+      We should share what we are doing whenever we can. Building our services transparently increases their visibility and accountability and will push us towards higher quality.
+  </li>
+  <li>
+      <img src={Flow} alt="Repository" />
+      <strong>Accessible</strong>
+      Our services are for everyone. We make sure people with different needs can use our products and that they meet the accessibility standards outlined in WCAG 2.1.<br/>(WCAG 2.2 will be released April 2023)
+  </li>
+  <li>
+      <img src={Plugin} alt="Repository" />
+      <strong>Automation</strong>
+      We value the time of our colleagues, users, and our future selves over our own. We are always proactively looking for ways to automate repetitive tasks and testing.
+  </li>
+  <li>
+      <img src={CodeBrackets} alt="Repository" />
+      <strong>Good experience</strong>
+      Last but certainly not least, we aim to provide developers with an enjoyable experience. Developers should be able to start using our tools in minutes, not hours, days or weeks.
+  </li>
+</ul>
+<br/>
+<br/>
+
+## Design System Benefits
+<ul className="link-list">
+  <li>
+      <img src={Plugin} alt="Repository" />
+      <strong>Efficiency</strong>
+      Designers no longer need to repeatedly rebuild components from scratch. A shared library of components streamlines this process and leaves less room for error.
+  </li>
+  <li>
+      <img src={Repo} alt="Repository" />
+      <strong>Consistency</strong>
+      Having a shared set of principles and rules to build components makes it easier to create consistent user experiences that accurately represent Tradefull across a variety of platforms.
+  </li>
+  <li>
+      <img src={StackAlt} alt="Repository" />
+      <strong>Scalability</strong>
+      Increased efficiency and consistency facilitate building products that scale.
+  </li>
+</ul>
+<br/>
+<br/>
+
+---
+---
