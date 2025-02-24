@@ -14,11 +14,11 @@ export const styles = css`
 
     --_tp-outline-color: #2d62b8;
 
-    --padding-block-small: 0.55em;
+    --padding-block-small: 0.45em;
     --padding-inline-small: 0.95em;
 
-    --padding-block-medium: 0.75em;
-    --padding-inline-medium: 2.125em;
+    --padding-block-medium: 0.5em;
+    --padding-inline-medium: 1.5em;
 
     --padding-inline-large: 3em;
 
@@ -26,11 +26,11 @@ export const styles = css`
     --gap-medium: 0.875em;
     --gap-small: 1em;
 
-    --font-default: 0.875em;
-    --font-large: 1em;
+    --font-default: 1.45em;
+    --font-large: 1.5em;
 
-    --line-height-default: 1.4;
-    --line-height-large: 1.5;
+    --line-height-default: 1.15;
+    --line-height-large: 1.25;
 
     --button-gap: var(--gap-medium);
     --button-padding-inline: var(--padding-inline-medium);
@@ -52,10 +52,11 @@ export const styles = css`
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     font-size: var(--button-font-size);
+    font-weight: 600;
     line-height: var(--button-line-height);
     gap: var(--button-gap);
     align-items: center;
-    border-radius: 0.375em;
+    border-radius: clamp(6px,.5cqi,14px);
     padding-block: var(--button-padding-block);
     padding-inline: var(--button-padding-inline);
     background-color: var(--_tp-button-background-color);

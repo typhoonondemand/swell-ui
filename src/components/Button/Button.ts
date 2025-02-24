@@ -35,14 +35,14 @@ export default class TyphoonButton extends LitElement {
         if(this.iconNames.length > 0) {
             if (this.iconNames.includes(',')) {
                 iconArray = this.iconNames.split(',');
-                iconMarkup = html`<tp-icon iconname=${iconArray[1].trim()} size='sm' />`;
-                altIconMarkup = html`<tp-icon iconname=${iconArray[0].trim()} size='sm' />`;
+                iconMarkup = html`<tp-icon iconname=${iconArray[1].trim()} size='md' />`;
+                altIconMarkup = html`<tp-icon iconname=${iconArray[0].trim()} size='md' />`;
             } else {
                 iconArray[0] = this.iconNames;
                 if(this.iconPlacement == 'start') {
-                    altIconMarkup = html`<tp-icon iconname=${iconArray[0].trim()} size='sm' />`;
+                    altIconMarkup = html`<tp-icon iconname=${iconArray[0].trim()} size='md' />`;
                 } else {
-                    iconMarkup = html`<tp-icon iconname=${iconArray[0].trim()} size='sm' />`;
+                    iconMarkup = html`<tp-icon iconname=${iconArray[0].trim()} size='md' />`;
                 }
             }
         }
