@@ -8,7 +8,7 @@ export default create({
 
   brandTitle: 'Typhoon Swell',
   brandUrl: 'https://typhoonondemand.github.io/swell-ui/',
-  brandImage: './src/assets/swell-logo-new.svg',
+  brandImage: 'swell-logo-new.svg',
   brandTarget: '_self',
 
   //
