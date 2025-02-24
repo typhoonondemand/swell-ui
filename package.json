@@ -29,12 +29,12 @@
     "@storybook/web-components": "^8.5.3",
     "@storybook/web-components-vite": "^8.5.3",
     "@types/node": "^22.13.1",
-    "@types/react": "^19",
-    "react": "^19.0.0",
+    "@types/react": "^18",
+    "react": "^18.0.0",
     "storybook": "^8.5.3",
     "typescript": "~5.7.2",
     "vite": "^6.1.0",
     "vite-plugin-dts": "^4.5.0"
   },
-  "packageManager": "yarn@4.5.3"
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
