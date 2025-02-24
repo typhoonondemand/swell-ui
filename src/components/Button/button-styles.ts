@@ -87,6 +87,22 @@ export const styles = css`
     --_tp-button-background-color: hsl(var(--secondary-hue) var(--secondary-saturation)calc(var(--secondary-lightness) / 1.5));
   }
 
+  :host([variant='control']) {
+    color: #fff;
+    --_tp-button-background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    border: 2px solid #fff;
+    text-shadow: 0 0 3px rgba(0,0,0,0.75);
+    filter: drop-shadow(0 0 4px rgba(0,0,0,.75));
+    display: inline-flex;
+    border-radius: clamp(6px,.5cqi,14px);
+  }
+
+  :host([variant='control']) :hover {
+    /* --_tp-button-background-color: var(--tp-button-background-color); */
+    --_tp-button-background-color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+  }  
+
   :host([variant='disabled']) {
     --_tp-button-background-color: #dfdfdf;
     color: #404559;

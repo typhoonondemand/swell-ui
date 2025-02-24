@@ -13,12 +13,13 @@ export default {
   },
   argTypes: {
     buttonVariant: {
-      options: ["primary", "secondary", "disabled", "danger", "success"],
+      options: ["primary", "secondary", "control", "disabled", "danger", "success"],
       control: {
         type: "select",
         labels: {
           primary: "Primary",
           secondary: "Secondary",
+          control: "Control",
           disabled: "Disabled",
           danger: "Danger/Critical",
           success: "Success/Completion",
@@ -208,6 +209,13 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   buttonVariant: "secondary",
   buttonText: "Secondary Button",
+};
+
+/** Use control buttons for interface actions such as modal close, audio toggle, and video playback controls. */
+export const Control = Template.bind({});
+Control.args = {
+  buttonVariant: "control",
+  buttonText: "Control Button",
 };
 
 /** Use for actions that are currently unavailable. The surrounding interface should provide an explanation as to why the button is disabled, and what needs to be done to enable it. */
