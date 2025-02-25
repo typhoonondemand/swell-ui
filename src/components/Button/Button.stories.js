@@ -12,7 +12,7 @@ export default {
     badges: [BADGE.BETA],
   },
   argTypes: {
-    buttonVariant: {
+    variant: {
       options: ["primary", "secondary", "control", "disabled", "danger", "success"],
       control: {
         type: "select",
@@ -27,7 +27,7 @@ export default {
       },
       name: "Variant",
       description:
-        "Button variants use color coding as a means of communicating an attribute of the intent of the button action.",
+        "Variants use color coding as a means of communicating an attribute of the intent of the button action.",
       table: { defaultValue: { summary: "primary" } },
     },
     buttonText: {
@@ -194,7 +194,6 @@ const Template = ({
 /** Use a primary button to highlight the most important call to action in an experience. Use them sparingly, at most once in a container, to avoid making the interface too busy. */
 export const Primary = Template.bind({});
 Primary.args = {
-  buttonVariant: "primary",
   buttonText: "Primary Button",
 };
 

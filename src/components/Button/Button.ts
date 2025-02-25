@@ -6,8 +6,8 @@ import { styles } from './button-styles';
 @customElement('tp-button')
 export default class TyphoonButton extends LitElement {
 
-    @property({type: String})
-    buttonVariant = this.getAttribute("buttonVariant") || 'primary';
+    @property({ reflect: true })
+    public variant?: 'secondary' | 'control' | 'danger'
 
     @property({type: String})
     iconNames = this.getAttribute("iconNames") || '';
@@ -51,7 +51,7 @@ export default class TyphoonButton extends LitElement {
             <button
                 type="button"
                 aria-label="button"
-                variant="${ifDefined(this.buttonVariant ? this.buttonVariant : undefined)}"
+                ?variant=${this.variant}
                 visualType="${ifDefined(this.visualType ? this.visualType : undefined)}"
                 sizing="${ifDefined(this.visualType ? this.visualType : undefined)}"
                 @click=${this.buttonFunction}>
