@@ -50,7 +50,7 @@ export const styles = css`
     display: inline-flex;
     border: 0;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Anuphan', Helvetica, sans-serif;
     font-size: var(--button-font-size);
     font-weight: 600;
     line-height: var(--button-line-height);

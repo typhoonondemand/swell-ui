@@ -1,0 +1,111 @@
+import { Meta, Typeset } from "@storybook/addon-docs";
+import { themes, ThemeProvider, convert, ensure } from "@storybook/theming";
+
+<Meta
+  title="Foundation/Typography"
+  parameters={{
+    viewMode: "docs",
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  }}
+/>
+
+<style>
+  {`
+    .sbdocs p {
+      font-size: 1.25em;
+      line-height: 1.35;
+    }
+
+    .sbdocs h3 {
+        margin-block-end: 0;
+    }
+
+    .sbdocs h3 + p {
+        margin-block: 0;
+    }
+`}
+</style>
+
+
+export const typography = {
+  type: {
+    primary: '"Anuphan", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    code: '"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace',
+  },
+  weight: {
+    regular: "400",
+    bold: "700",
+    extrabold: "800",
+    black: "900",
+  },
+  size: {
+    xs: 12,
+    sm: 14,
+    md: 18,
+    lg: 24,
+    xl: 32,
+    h4: 28,
+    h3: 32,
+    h2: 40,
+    h1: 48,
+    code: 90,
+  },
+};
+
+# Typography
+
+Swell Design System provides a constrained, purposeful set of typographic styles that we use to present user interface and content as clearly and efficiently as possible.
+
+## Typeface: Anuphan
+
+Swell uses the open-source typeface Anuphan. It meets Typhoon’s current needs of needing a clear, easy-to-read typeface having a minimum of three different weights, italic styles included, and glyphs from other languages of the world that will enable internationalization when those needs make themselves evident. 
+
+## Scale
+The Swell type scale is built on a single equation. The formula for our scale was created to provide hierarchy for all types of experiences. The formula assumes that y₀=12 px.
+
+|     |   xs  |  sm   |       |  md   |       |  lg   |       |  xl   |
+| --- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| rem |  0.75 | 0.875 | 1     | 1.125 | 1.25  | 1.5   | 1.75  | 2     |
+| px  | 12    | 14    | 16    | 18    | 20    | 24    | 28    | 32    |
+
+
+### Regular Type: xs,sm, md, lg, xl
+<Typeset
+  fontFamily={"Anuphan"}
+  fontSizes={[
+    Number(typography.size.xs),
+    Number(typography.size.sm),
+    Number(typography.size.md),
+    Number(typography.size.lg),
+    Number(typography.size.xl),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={"The five boxing wizards jump quickly."}
+/>
+
+### Headers: H1, H2, H3, H4
+<Typeset
+  fontFamily={"Anuphan"}
+  fontSizes={[
+    Number(typography.size.h1),
+    Number(typography.size.h2),
+    Number(typography.size.h3),
+    Number(typography.size.h4),
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={"The five boxing wizards jump quickly."}
+/>
+
+## Style
+Typography creates purposeful texture, guiding users to read and understand the hierarchy of information. The right typographic treatment and the controlled usage of type styles helps manage the display of content, keeping it useful, simple, and effective.
+
+
+## Weights
+Font weight is an important typographic variable that can add emphasis and differentiate content hierarchy. Font weight and size pairings must be carefully balanced. A bold weight will always have more emphasis than a lighter weight font of the same size. However, a lighter weight font can rank hierarchically higher than a bold font if the lighter weight type size is significantly larger than the bold one.
+
+We suggest using Anuphan Regular, and Bold for digital experiences. The bold weight is ideal for section headers, but should not be used for long text.
+
+
+

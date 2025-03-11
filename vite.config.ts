@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
@@ -8,7 +9,7 @@ export default defineConfig({
   build: {
     copyPublicDir: false,
     lib: {
-        entry: 'lib/main.ts',
+        entry: resolve(__dirname, 'lib/main.ts'),
         formats: ['es'],
     },
     rollupOptions: {

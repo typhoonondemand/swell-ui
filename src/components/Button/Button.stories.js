@@ -163,7 +163,7 @@ export default {
 };
 
 const Template = ({
-  buttonVariant,
+  variant,
   buttonText,
   iconName,
   altIconName,
@@ -182,7 +182,7 @@ const Template = ({
 
   return html`<tp-button
     type="button"
-    variant=${buttonVariant}
+    variant=${variant}
     iconNames=${iconNames}
     iconPlacement=${iconPlacement}
     visualType=${visualType}
@@ -206,20 +206,20 @@ Primary.args = {
 /** Use secondary buttons alongside a primary button to provide alternative actions on a page. If no variant is provided, the Button will default to this look and feel. */
 export const Secondary = Template.bind({});
 Secondary.args = {
-  buttonVariant: "secondary",
+  variant: "secondary",
   buttonText: "Secondary Button",
 };
 
 /** Use control buttons for interface actions such as modal close, audio toggle, and video playback controls. */
 export const Control = Template.bind({});
 Control.args = {
-  buttonVariant: "control",
+  variant: "control",
   buttonText: "Control Button",
 };
 
 /** Use for actions that are currently unavailable. The surrounding interface should provide an explanation as to why the button is disabled, and what needs to be done to enable it. */
 export const Disabled = Template.bind({});
 Disabled.args = {
-  buttonVariant: "disabled",
+  variant: "disabled",
   buttonText: "Disabled Button",
 };
